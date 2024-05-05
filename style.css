@@ -1,0 +1,122 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222831;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #f2f2f2;
+}
+
+.wikipediaSearch {
+  padding: 2.5rem 0;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container img {
+  width: 200px;
+}
+
+.container h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  background-color: #393e46;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 100px;
+  border-radius: 5px;
+}
+
+.form-input,
+.search-btn {
+  padding: 0.5rem 0.7rem;
+  background: #ffffff;
+  border: 1px solid #dbd8e3;
+}
+
+.form-input {
+  border-right: transparent;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.search-btn {
+  border: 1px solid #005792;
+  border-left: transparent;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  text-transform: capitalize;
+  background: #005792;
+  color: #f8fafc;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  color: #070f4e;
+}
+
+/* results */
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff6347;
+}
+
+.results {
+  padding: 2rem 0;
+}
+
+.articles {
+  display: grid;
+  gap: 1rem;
+}
+
+.articles a {
+  display: block;
+  text-decoration: none;
+  background: #263849;
+  color: #eef2e2;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out all;
+}
+
+.articles a h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.articles a:hover {
+  background: #eef2e2;
+  color: #263849;
+}
+
+@media screen and (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
